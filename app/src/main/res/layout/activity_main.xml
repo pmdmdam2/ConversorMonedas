@@ -33,19 +33,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <TextView
             android:id="@+id/tcPrimeraUnidad"
-            android:layout_width="202dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvUnidad1"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tvSegundaUnidad"
-            android:layout_width="208dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="@string/tvUnidad2"
             android:textSize="24sp" />
     </LinearLayout>
@@ -53,18 +56,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <Spinner
             android:id="@+id/spin1"
-            android:layout_width="202dp"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_weight="1"
             android:entries="@array/monedas" />
 
         <Spinner
             android:id="@+id/spin2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_weight="1"
             android:entries="@array/monedas" />
 
     </LinearLayout>
