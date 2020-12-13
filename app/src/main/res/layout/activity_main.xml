@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="41dp" />
+
+    <TextView
+        android:id="@+id/tvPrimerValorHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etPrimerValor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
+        android:hint="@string/valorA"
+        android:inputType="numberDecimal"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tcPrimeraUnidad"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tvUnidad1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvSegundaUnidad"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:text="@string/tvUnidad2"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spin1"
+            android:layout_width="202dp"
+            android:layout_height="48dp"
+            android:entries="@array/monedas" />
+
+        <Spinner
+            android:id="@+id/spin2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/monedas" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convertir"
+        android:text="@string/buttonConvertir" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvResul"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/money" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Conversor de monedas I</string>
+    <string name="tv1">Dinero a cambiar: </string>
+    <string name="tvUnidad1">Divisa origen: </string>
+    <string name="tvUnidad2">Divisa destino: </string>
+    <string name="valorA">Introduzca cantidad</string>
+    <string-array name="monedas">
+        <item>Euro €</item>
+        <item>Dolar $</item>
+        <item>Libra £</item>
+        <item>Yen ¥</item>
+    </string-array>
+    <string name="buttonConvertir">CONVERTIR</string>
+    <string name="resultado">Resultado:</string>
+</resources>
